@@ -5,13 +5,10 @@ useHead({
   meta: [
     { name: 'description', content: config.public.description }
   ],
-  bodyAttrs: {
-    class: 'test'
-  },
   htmlAttrs: {
-    class: 'scroll- smooth'
+    class: 'scroll-smooth'
   },
-  script: [{ innerHTML: 'console.log(\'Hello world\')' }]
+
 })
 </script>
 

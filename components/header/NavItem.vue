@@ -1,18 +1,20 @@
 <script setup lang="ts">
+import { defineProps } from 'vue';
+
 const props = defineProps<{
     link: {
-        url: string,
-        title: string
+        url: string;
+        title: string;
     }
-}>()
+}>();
 
-const scrollToSection = (event: { preventDefault: () => void; currentTarget: { getAttribute: (arg0: string) => any; }; }) => {
+const scrollToSection = (event: MouseEvent) => {
     event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
+    const targetId = props.link.url; // Используем props для получения URL
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
-        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 80; // 60px отступ
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 80; // 80px отступ
         window.scrollTo({
             top: offsetPosition,
             behavior: "smooth"
@@ -22,8 +24,9 @@ const scrollToSection = (event: { preventDefault: () => void; currentTarget: { g
 </script>
 
 <template>
-    <a :href="link.url" @click="scrollToSection" class="text-white text-xl hover:text-custom-blue">{{ link.title
-        }}</a>
+    <a :href="link.url" @click="scrollToSection" class="text-white text-xl hover:text-custom-blue focus:text-white">
+        {{ link.title }}
+    </a>
 </template>
 
 <style lang="scss" scoped></style>

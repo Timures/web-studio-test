@@ -3,8 +3,8 @@ const config = useRuntimeConfig();
 </script>
 
 <template>
-    <footer class="bg-custom-black text-white py-4">
-        <div class="container mx-auto text-center">
+    <footer class="bg-transparent text-white py-4">
+        <div class="container mx-auto text-center flex flex-col gap-2 sm:flex-row justify-between px-2">
             <p>&copy; {{ new Date().getFullYear() }} {{ config.public.title }}. Все права защищены.</p>
             <p>
                 Разработано: &nbsp;
