@@ -9,6 +9,8 @@ export default {
         "custom-text-gray": "#5b5b5b",
         "custom-about-gray": "#d9d9d9",
         "custom-dark-gray": "#414141",
+        "custom-dark-blue": "rgba(20, 19, 92, 0.2)",
+        "custom-bright-blue": "rgba(5, 0, 255, 0.2)",
       },
       fontFamily: {
         sans: ["Kantumruy Pro"],
