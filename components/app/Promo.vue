@@ -20,11 +20,12 @@
             </div>
 
             <div class="flex items-center w-full md:w-1/2 p-2 order-1 sm:order-2">
-                <NuxtImg src="/images/web-studio-promo2x.webp" />
+                <NuxtImg aria-hidden="true" src="/images/web-studio-promo2x.webp" alt="image promo" width="100%"
+                    height="auto" />
             </div>
         </div>
         <div class="flex justify-center absolute bottom-12 md:bottom-0 left-1/2 transform -translate-x-1/2">
-            <NuxtImg src="/icons/arrow-down.svg" width="auto" height="70px" class="animate-up-down"
+            <NuxtImg aria-hidden="true" src="/icons/arrow-down.svg" width="auto" height="70px" class="animate-up-down"
                 alt="arrow down icon" />
         </div>
 
