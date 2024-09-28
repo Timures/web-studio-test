@@ -10,8 +10,8 @@ const aboutList = [
 <template>
     <ul
         class="rounded-0 md:rounded-3xl bg-white px-2 py-12 md:px-12 xl:px-28 md:py-24 w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 xl:gap-24 mt-16">
-        <li v-for="item in aboutList" :key="item.id">
-            <AboutItem :item />
+        <li v-for="(item, index) in aboutList" :key="item.id">
+            <AboutItem :item data-aos="zoom-in" :data-aos-delay="index * 200" />
         </li>
     </ul>
 </template>

@@ -11,9 +11,16 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxt/image",
+    "nuxt-aos",
   ],
   tailwindcss: {
     configPath: "~/tailwind.config",
     cssPath: "~/assets/css/tailwind.css",
+  },
+  runtimeConfig: {
+    public: {
+      title: process.env.NUXT_TITLE,
+      description: process.env.NUXT_DESCRIPTION,
+    },
   },
 });
