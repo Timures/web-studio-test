@@ -9,7 +9,7 @@ const teamList = [
 <template>
     <ul class="w-full mt-16 flex flex-col gap-5 md:gap-3 sm:flex-row justify-between px-2 md:px-12 xl:px-24 2xl:px-52">
         <li v-for="teammate in teamList" :key="teammate.id">
-            <TeamItem :teammate />
+            <TeamItem :teammate data-aos="flip-left" data-aos-delay="100" />
         </li>
     </ul>
 </template>
