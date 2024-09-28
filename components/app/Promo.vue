@@ -20,9 +20,25 @@
         </div>
 
         <div class="flex items-center w-full md:w-1/2 p-2">
-            <NuxtImg src="/images/web-studio-promo2x.webp" />
+            <NuxtImg src="/images/web-studio-promo2x.webp" class="animate-up-down" />
         </div>
     </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="css">
+@keyframes move-up-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+}
+
+.animate-up-down {
+    animation: move-up-down 4s ease-in-out infinite;
+}
+</style>
