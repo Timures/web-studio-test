@@ -1,6 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Stack
+
+- Nuxt 3
+- Node 20.5.0
+
+### Modules
+
+- Nuxt-Aos
+- TailwindCSS
+
+### Google Font
+
+- Kantumruy Pro
+
+## Important
+
+- Don't forget add .env file from example.env
 
 ## Setup
 
